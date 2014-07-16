@@ -24,7 +24,6 @@ def get_calendar_secure(filter_id, date_field_name, show_version):
         show_version = 'true'  # any value that isn't one of the above will result in versions shown
     else:
         show_version = 'false'
-    print JIRA_BASE_URL + "/plugins/servlet/calendar?searchRequestId=" + filter_id + "&dateFieldName=" + date_field_name + "&showVersions=" + show_version + "&os_username=" + JIRA_USERNAME + "&os_password=" + JIRA_PASSWORD
     return urllib2.urlopen(JIRA_BASE_URL + "/plugins/servlet/calendar?searchRequestId=" + filter_id + "&dateFieldName=" + date_field_name + "&showVersions=" + show_version + "&os_username=" + JIRA_USERNAME + "&os_password=" + JIRA_PASSWORD).read()
 
 @app.route('/cal/<filter_id>/<date_field_name>', methods=['GET'])
