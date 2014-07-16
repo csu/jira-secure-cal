@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, jsonify
 from configuration import *
 import urllib2
 
