@@ -1,6 +1,10 @@
 # JIRA Secure Calendar
 What does this do? This allows you to securly generate and access calendars from JIRA JQL queries and date fields (including custom date fields) through a web interface.
 
+## Features
+* Make calendars from JQL queries and issue date fields
+* Make calendars available to external calendar clients without exposing JIRA login credentials
+
 ## Requirements
 * Python 2.x
 * JIRA installation with the JIRA Calendar plugin installed
