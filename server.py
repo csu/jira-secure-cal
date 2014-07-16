@@ -15,7 +15,7 @@ def index():
         'author': 'Christopher Su',
         'website': 'http://christophersu.net',
         'source': 'https://github.com/csu/jira-secure-cal',
-        'usage': 'GET '
+        'usage': 'GET /cal/<filter_id>/<date_field_name>/<show_version>'
     })
 
 @app.route('/cal/<filter_id>/<date_field_name>/<show_version>', methods=['GET'])
